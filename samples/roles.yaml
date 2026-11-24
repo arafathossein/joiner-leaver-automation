@@ -1,0 +1,32 @@
+# Which groups and licences each role gets. Everyone gets the baseline.
+# Rules match on department and job title (wildcards allowed) and add up.
+company: Northwind Trading
+domain: example.com
+usage_location: GB          # required by Microsoft 365 before a licence can be assigned
+credential: tap             # tap = Entra Temporary Access Pass; password = temporary password
+
+baseline:
+  groups: [All Staff, VPN Users]
+  licences: [SPB]           # SKU part number; SPB is Microsoft 365 Business Premium
+
+roles:
+  - match: {department: Finance}
+    groups: [Finance, Finance Share]
+  - match: {department: Finance, title: "Accounts Payable*"}
+    groups: [AP Approvers]
+  - match: {department: Sales}
+    groups: [Sales, CRM Users]
+  - match: {department: IT}
+    groups: [IT Staff, Server Admins]
+    review: true            # privileged access: a second person approves before apply
+
+# Never touched by this tool, whatever the HR feed says.
+protected:
+  - admin@example.com
+  - breakglass-01@example.com
+
+leaver:
+  auto_reply: true
+  auto_reply_text: "{name} no longer works at {company}. Please contact {manager}."
+  licence_removal_after_days: 30
+  delete_after_days: 90

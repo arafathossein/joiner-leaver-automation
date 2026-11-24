@@ -1,0 +1,7 @@
+kind,employee_id,email,first_name,last_name,department,title,manager_email,effective_date
+joiner,E1042,sara.khan@example.com,Sara,Khan,Finance,Accounts Payable Clerk,omar.ali@example.com,2026-12-01
+joiner,E1043,tom.reed@example.com,Tom,Reed,IT,Systems Engineer,amira.haddad@example.com,2026-12-01
+mover,E0877,lena.berg@example.com,Lena,Berg,Finance,Financial Analyst,omar.ali@example.com,2026-11-30
+leaver,E0612,daniel.cho@example.com,Daniel,Cho,IT,Systems Administrator,amira.haddad@example.com,2026-11-30
+leaver,E0731,priya.nair@example.com,Priya,Nair,Sales,Account Manager,james.okafor@example.com,2026-12-15
+leaver,E0001,admin@example.com,Tenant,Admin,IT,,,2026-11-30

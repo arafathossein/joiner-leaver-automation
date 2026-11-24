@@ -1,0 +1,18 @@
+{
+  "omar.ali@example.com": {"id": "u-0001", "enabled": true, "department": "Finance", "title": "Finance Manager",
+    "manager": "", "groups": ["All Staff", "VPN Users", "Finance", "Finance Share"], "licences": ["SPB"]},
+  "amira.haddad@example.com": {"id": "u-0002", "enabled": true, "department": "IT", "title": "IT Lead",
+    "manager": "", "groups": ["All Staff", "VPN Users", "IT Staff", "Server Admins"], "licences": ["SPB"]},
+  "lena.berg@example.com": {"id": "u-0003", "enabled": true, "department": "Sales", "title": "Account Executive",
+    "manager": "james.okafor@example.com", "groups": ["All Staff", "VPN Users", "Sales", "CRM Users", "Office 3rd Floor"],
+    "licences": ["SPB"]},
+  "daniel.cho@example.com": {"id": "u-0004", "enabled": true, "department": "IT", "title": "Systems Administrator",
+    "manager": "amira.haddad@example.com", "groups": ["All Staff", "VPN Users", "IT Staff", "Server Admins"],
+    "licences": ["SPB"], "admin_roles": ["Exchange Administrator"]},
+  "priya.nair@example.com": {"id": "u-0005", "enabled": true, "department": "Sales", "title": "Account Manager",
+    "manager": "james.okafor@example.com", "groups": ["All Staff", "VPN Users", "Sales", "CRM Users"], "licences": ["SPB"]},
+  "james.okafor@example.com": {"id": "u-0006", "enabled": true, "department": "Sales", "title": "Sales Director",
+    "manager": "", "groups": ["All Staff", "VPN Users", "Sales", "CRM Users"], "licences": ["SPB"]},
+  "admin@example.com": {"id": "u-0007", "enabled": true, "department": "IT", "title": "", "manager": "",
+    "groups": [], "licences": [], "admin_roles": ["Global Administrator"]}
+}
